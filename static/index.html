@@ -69,6 +69,7 @@
 				var y = entity["y"];
 				//moveTo(x,y);
 				fillStyle = entity["colour"];
+				
 				strokeStyle = fillStyle;
 				arc(x, y, (entity["radius"])?entity["radius"]:50, 0, 2.0 * Math.PI, false);  
 				stroke();
@@ -264,7 +265,11 @@
 			});
 
 			mouse.mousedraggers.push(function(x,y,clicked,e) {
-				addEntityWithoutName({'x':x,'y':y,'colour':'green',
+				var color = "rgb(" + (256*Math.random())
+							+ ", " + (256*Math.random())
+							+ ", " + (256*Math.random()) + ")";
+			
+				addEntityWithoutName({'x':x,'y':y,'colour': color,
 					  'radius':10});
 			});
 
