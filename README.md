@@ -1,3 +1,10 @@
+Simon Chau 
+1460077
+
+Used for reference: 
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
+
+
 CMPUT404-assignment-ajax
 ==============================
 
